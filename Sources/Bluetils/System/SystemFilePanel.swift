@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-protocol FilePickerResultsType {
+public protocol FilePickerResultsType {
     var canceled: Bool { get }
     var path: String? { get }
 }
@@ -33,7 +33,7 @@ struct FilePickerResults: FilePickerResultsType {
  * - Returns: FilePickerResults
  */
  
-func OpenFilePicker(title: String, showsResizeIndicator: Bool, showsHiddenFiles: Bool, canChooseDirectories: Bool, canCreateDirectories: Bool, allowsMultipleSelection: Bool, allowedFileTypes: [String]) -> FilePickerResults {
+public func OpenFilePicker(title: String, showsResizeIndicator: Bool, showsHiddenFiles: Bool, canChooseDirectories: Bool, canCreateDirectories: Bool, allowsMultipleSelection: Bool, allowedFileTypes: [String]) -> FilePickerResults {
     let dialog = NSOpenPanel();
     
     dialog.title                   = title;

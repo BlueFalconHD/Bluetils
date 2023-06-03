@@ -12,7 +12,7 @@ import Foundation
     - Parameter url: The URL to convert
     - Returns: A human readable filepath string
  */
-func humanReadableURL(from url: URL) -> String {
+public func humanReadableURL(from url: URL) -> String {
     var path = url.absoluteString
     path.removeFirst(7)
     return path.removingPercentEncoding!
@@ -23,7 +23,7 @@ func humanReadableURL(from url: URL) -> String {
     - Parameter string: The filepath string to convert
     - Returns: A URL
  */
-func rawURL(from string: String) -> URL {
+public func rawURL(from string: String) -> URL {
     let encoded = string.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)!
     return URL(string: "file://\(encoded)")!
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 // functions to clamp width and height between a min and max value, using frame in the backend. add as extensions to View
 
-extension View {
+public extension View {
     func clampWidth(min: CGFloat, max: CGFloat) -> some View {
         frame(minWidth: min, maxWidth: max)
     }

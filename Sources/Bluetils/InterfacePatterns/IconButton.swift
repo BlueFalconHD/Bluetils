@@ -14,7 +14,7 @@ import SwiftUI
     - Parameter icon: The name of the icon to display
     - Returns: A simple unstyled button with an icon
  */
-struct IconButton: View {
+public struct IconButton: View {
     var action: () -> Void
     var icon: String
     

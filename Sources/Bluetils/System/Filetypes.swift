@@ -14,9 +14,9 @@ import UniformTypeIdentifiers
     - Parameter fileMedium: The string to get the UTType from
     - Returns: The UTType of the file extension, or nil if it does not exist
  */
-func GetFiletype(fileMedium: String) -> UTType? {
+public func GetFiletype(fileMedium: String) -> UTType? {
     return UTType(fileMedium) ?? nil
 }
 
-typealias Filetype = UTType
-typealias Filetypes = [Filetype]
+public typealias Filetype = UTType
+public typealias Filetypes = [Filetype]
