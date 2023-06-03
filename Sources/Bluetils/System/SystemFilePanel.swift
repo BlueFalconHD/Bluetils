@@ -12,9 +12,9 @@ public protocol FilePickerResultsType {
     var path: String? { get }
 }
 
-struct FilePickerResults: FilePickerResultsType {
-    var canceled: Bool
-    var path: String?
+public struct FilePickerResults: FilePickerResultsType {
+    public var canceled: Bool
+    public var path: String?
 }
 
 

@@ -23,4 +23,9 @@ public struct IconButton: View {
             Image(systemName: icon)
         }
     }
+    
+    public init(action: @escaping () -> Void, icon: String) {
+        self.action = action
+        self.icon = icon
+    }
 }
