@@ -18,7 +18,7 @@ public struct IconButton: View {
     var action: () -> Void
     var icon: String
     
-    var body: some View {
+    public var body: some View {
         Button(action: action) {
             Image(systemName: icon)
         }
