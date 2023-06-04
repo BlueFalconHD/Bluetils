@@ -17,5 +17,8 @@ public extension View {
     func clampHeight(min: CGFloat, max: CGFloat) -> some View {
         frame(minHeight: min, maxHeight: max)
     }
+    
+    func alignment(_ alignment: Alignment) -> some View {
+        frame(alignment: alignment)
+    }
 }
-
